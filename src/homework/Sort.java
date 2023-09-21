@@ -5,21 +5,20 @@ public class Sort {
 
         int[] arrSort = {1, 60, 2, 3, 0, 9, 20};
 
-        for (int j = 0; j < arrSort.length; j++) {
-            for (int i = 0; i < arrSort.length; i++) {
-                if (arrSort[i] != arrSort[arrSort.length-1] &&
-                           arrSort[i] > arrSort[i+1]){
+        //Վերանայած տարբերակը
+
+        for (int i = 0; i < arrSort.length; i++) {
+            for (int j = 1; j < arrSort.length; j++) {
+                if (arrSort[j - 1] > arrSort[j]){
                     int x;
-                    x = arrSort[i];
-                    arrSort[i] = arrSort[i + 1];
-                    arrSort[i + 1] = x;
-                }
-                if (j == arrSort.length-1){
-                    System.out.print(arrSort[i] + ",");
+                    x = arrSort[j];
+                    arrSort[j] = arrSort[j - 1];
+                    arrSort[j - 1] = x;
                 }
             }
         }
-
-        // մի քիչ շատ խառը ստացվեց, կվերանայեմ ☻
+        for (int i : arrSort) {
+            System.out.print(i + ", ");
+        }
     }
 }
