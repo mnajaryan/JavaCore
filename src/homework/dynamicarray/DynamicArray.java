@@ -89,8 +89,7 @@ public class DynamicArray {
         return false;
     }
 
-    //Վերադարձնել տրված value-ի ինդեքսը, եթե շատ կա տվյալ թվից, վերադարձնել առաջին ինդեքսը։
-//եթե չկա, -1
+
     public int getIndexByValue(int value) {
         for (int i : array) {
             if (value == array[i]){

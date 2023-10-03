@@ -20,10 +20,10 @@ public class DynamicArrayDemo {
 //        ex1.set(1, 55);
 //        ex1.addElem(1,55);
 //        System.out.println();
-//        ex1.addElem(16, 99);
+//        ex1.addElem(3, 9);
 //        System.out.println(ex1.exists(70));
 //        System.out.println(ex1.exists(7));
-        System.out.println(ex1.getIndexByValue(7));
+//        System.out.println(ex1.getIndexByValue(7));
 
     }
 }

@@ -11,4 +11,8 @@ public class Box {
         this.height = height;
         this.dept = dept;
     }
+
+    Box(){
+
+    }
 }
