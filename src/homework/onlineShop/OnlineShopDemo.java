@@ -77,7 +77,7 @@ public class OnlineShopDemo implements Command {
             }
             user.getUserType();
         } catch (NullPointerException nul) {
-            System.out.println("Sorry, Uncorrect email or password. Try again!");
+            System.out.println("Sorry, Uncorrected email or password. Try again!");
         }
     }
 
